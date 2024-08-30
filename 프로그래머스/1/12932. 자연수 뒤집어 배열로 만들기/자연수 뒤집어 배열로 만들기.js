@@ -6,3 +6,5 @@ function solution(n) {
     }
     return answer;
 }
+
+//Math.floor()도 알아두자
