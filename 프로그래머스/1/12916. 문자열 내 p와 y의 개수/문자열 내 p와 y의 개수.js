@@ -11,9 +11,5 @@ function solution(s){
         }
     }
 
-    if (p_cnt === y_cnt) {
-        return true;
-    } else {
-        return false;
-    }
+    return p_cnt === y_cnt ? true : false
 }
