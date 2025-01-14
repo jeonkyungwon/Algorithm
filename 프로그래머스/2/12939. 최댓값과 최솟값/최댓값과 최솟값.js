@@ -15,3 +15,9 @@ function solution(s) {
 
     return min + ' ' + max;
 }
+
+/*
+    split('원하는 구분자') -> 원하는 구분자로 문자열 나누기
+    map(Number) -> 정수형으로 변환
+    최대, 최소 구하는 함수 -> Math.max() / Math.min()
+*/
