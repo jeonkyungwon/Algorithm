@@ -8,3 +8,8 @@ function solution(A,B){
    }
     return answer;
 }
+
+/*
+    sort((a, b) => a - b) -> 오름차순
+    sort((a, b) => b - a) -> 내림차순
+*/
