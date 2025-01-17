@@ -18,3 +18,8 @@ function solution(s){
     }
     return false;
 }
+
+/*
+    조건문 부분에서 ? 함수 적극 이용하기
+    ex) result === 0 ? true : fasle;
+*/
