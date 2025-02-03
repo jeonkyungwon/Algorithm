@@ -6,7 +6,6 @@ def solution(s):
 	
     for tup in s:
         diff = set(tup) - set(answer)
-        print(list(diff)[0])
         answer.append(list(diff)[0])
     
     answer = [int(i) for i in answer]
