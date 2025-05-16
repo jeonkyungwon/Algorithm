@@ -33,20 +33,17 @@ for _ in range(T):
             score += 1
 
     # 우승 팀 출력
-    win_score = result[rest[0]]
-    win_cnt, win = 0, rest[0]
+    win_score, win = result[rest[0]], rest[0]
     check = []
     for i in rest:
         if result[i] < win_score:
             win_score = result[i]
             win = i
-            win_cnt = 1
             check = [i]
         elif result[i] == win_score:
-            win_cnt += 1
             check.append(i)
 
-    if win_cnt == 1:
+    if len(check) == 1:
         print(win)
     else:
         print(check[0])
