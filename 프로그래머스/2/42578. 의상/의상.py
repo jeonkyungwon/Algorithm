@@ -1,13 +1,13 @@
-from collections import defaultdict
-
 def solution(clothes):
     answer = 1
-    clothes_dict = defaultdict(int)
-
-    for name, category in clothes:
-        clothes_dict[category] += 1
-
-    for count in clothes_dict.values():
-        answer *= (count + 1)
+    styles = {}
     
-    return answer - 1  
+    for cloth in clothes:
+        if cloth[1] not in styles:
+            styles[cloth[1]] = 0
+        styles[cloth[1]] += 1
+
+    for key in styles:
+        answer *= (styles[key] + 1)
+
+    return answer - 1
