@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        N = Integer.parseInt(br.readLine().trim());
+        N = Integer.parseInt(br.readLine());
 
         col = new boolean[N];
         d1 = new boolean[2 * N];
