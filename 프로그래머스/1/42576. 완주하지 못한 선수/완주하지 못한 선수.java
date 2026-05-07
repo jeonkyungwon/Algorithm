@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.*;
 
 class Solution {    
@@ -13,10 +14,8 @@ class Solution {
             map.put(str, map.get(str) - 1);
         }
 
-        for (Map.Entry<String, Integer> entry : map.entrySet()) {
-            if (entry.getValue() != 0) {
-                return entry.getKey();
-            }
+        for (String key : map.keySet()) {
+            if (map.get(key) != 0) return key;
         }
         
         return answer;
